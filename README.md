@@ -1,8 +1,5 @@
 # startup
 Matthew Lund's repository for CS260 @ BYU
-I have made changes and thus you can see these changes I have made.
-yipeekayay
 
-MORE CHANGES
-
-This edit is happening in VSCode, except this is after the merge
+I got to see exactly how pushing and pulling and committing works across platforms (VSCode and GitHub). 
+Everything is set up now so I can work from VSCode and have everything backed up on GitHub.
