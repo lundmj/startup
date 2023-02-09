@@ -11,3 +11,7 @@ Key Features:
 - Ability to apply a "modifier," or a value that gets added to whatever result is rolled
 - Instantly displays the roll for the roller and the one who they connect with, which is probably the person administering the game
 - Rolls up to 8 dice at once, both displaying their values and providing a sum at the bottom
+
+NOTES FOR SIMON
+HTML:
+It was way easier than I expected! I tried to basically go through each thing and code it as it was written in the example thing. Some things I did a tiny bit different. For the actual buttons in play.html, I did copy what was there, but I looked through to try and understand what it was saying. But yeah I got some more experience putting together html, and got to see the process of turning my html from VSCode into an actual subdomain in my website!
