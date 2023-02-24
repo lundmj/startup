@@ -19,11 +19,32 @@
     padding: 3%;
     
 }
+#diceselect {
+    height:30%;
+    background-color: lightgray;
+    display: grid;
+    width:80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    padding: 3%
+}
+.d-option {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color:rgb(78, 3, 175);
+}
+.on {
+    background-color: rgb(188, 185, 185) !important;
+}
 #username {
     padding-left: ;
 
 }
-
+.actualpic {
+    height: 30vh;
+    width: 25vh;
+}
 header {
     flex: 1 125px;
     padding-top: 15px;
@@ -54,7 +75,10 @@ button {
 button:hover {
     background-color: rgb(188, 185, 185) !important;
 }
-
+.roll-button{
+    height: 60px;
+    width: 100px;
+}
 h1 {
     padding-bottom: 25px;
 }
