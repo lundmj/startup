@@ -1,0 +1,60 @@
+.navbar-brand:hover{
+    text-decoration: underline;
+}
+#center {
+    width: 400px; 
+    margin: auto; 
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-style:double
+   
+}
+#dicepic {
+    height: 32%;
+}
+#form {
+    height:60%;
+    background-color: lightgray;
+    padding: 3%;
+    
+}
+#username {
+    padding-left: ;
+
+}
+
+header {
+    flex: 1 125px;
+    padding-top: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+}
+main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#actualform {
+    background-color: rgb(142, 142, 142);
+    padding: 1ch;
+    border-radius: 10px;
+}
+
+button {
+    padding-top: 10px;
+    background-color: white !important;
+}
+button:hover {
+    background-color: rgb(188, 185, 185) !important;
+}
+
+h1 {
+    padding-bottom: 25px;
+}
