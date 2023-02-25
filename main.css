@@ -78,3 +78,9 @@ button:hover {
 h1 {
     padding-bottom: 25px;
 }
+.dice-footer {
+    height: 30px;
+}
+a.text-reset {
+    float: right;
+}
