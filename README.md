@@ -15,3 +15,7 @@ Key Features:
 NOTES FOR SIMON
 HTML:
 It was way easier than I expected! I tried to basically go through each thing and code it as it was written in the example thing. Some things I did a tiny bit different. For the actual buttons in play.html, I did copy what was there, but I looked through to try and understand what it was saying. But yeah I got some more experience putting together html, and got to see the process of turning my html from VSCode into an actual subdomain in my website!
+
+NOTES FOR STARTUP
+HTML and CSS:
+Messing around with CSS helps you to learn a lot about how it goes together. I am by no means a pro at it yet, but I was able to figure out how to make my application work well, mostly within a mobile phone's dimensions. Currently it uses some crappy dice png files, but once I learn how to implement my dice rolling into the project, I will make these fit into the site better. They are currently more of a placeholder for that feature.
