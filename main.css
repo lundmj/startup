@@ -11,7 +11,7 @@
    
 }
 #dicepic {
-    height: 32%;
+    height: 30vh;
 }
 #form {
     height:60%;
@@ -20,10 +20,10 @@
     
 }
 #diceselect {
-    height:30%;
+    height:30vh;
     background-color: lightgray;
     display: grid;
-    width:80%;
+    width:95vw;
     grid-template-columns: 1fr 1fr 1fr;
     gap:10px;
     padding: 3%
@@ -72,7 +72,7 @@ button:hover {
     background-color: rgb(188, 185, 185) !important;
 }
 .roll-button{
-    height: 60px;
+    height: 6vh;
     width: 100px;
 }
 h1 {
