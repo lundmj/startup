@@ -12,6 +12,12 @@
 }
 #dicepic {
     height: 30vh;
+    text-align: center;
+}
+.center-result{
+    position: relative;
+    top: -11vh;
+    right: 0px;
 }
 #form {
     height:60%;
