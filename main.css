@@ -1,5 +1,93 @@
-.navbar-brand:hover{
-    text-decoration: underline;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+  
+  /* Style the header */
+header {
+    height: 125px;
+    background-color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
+  /* Style the DualDice text in the header */
+header .navbar-brand {
+    font-size: 40px;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+  
+  /* Style the main content area */
+main {
+    height: calc(100vh - 155px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+  /* Style the dicepart div */
+#dicepart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.diceselect-container {
+    background-color: #e0dddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  /* Style the d20 image in the dicepart div */
+#dicepart img {
+    width: 100%;
+}
+  
+  /* Style the d20-result span in the dicepart div */
+#d20-result {
+    font-size: 40px;
+    font-weight: bold;
+}
+  
+  /* Style the roll button in the dicepart div */
+.roll-button {
+    margin-top: 20px;
+}
+  
+  /* Style the diceselect div */
+#diceselect {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+  
+  /* Style the individual dice buttons in the diceselect div */
+.d-option {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0.75em 1.5em;
+}
+  
+  /* Style the footer */
+footer {
+    height: 30px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+  
+  /* Style the GitHub link in the footer */
+footer a {
+    color: white;
 }
 #center {
     width: 400px; 
@@ -9,84 +97,4 @@
     font-family: 'Courier New', Courier, monospace;
     border-style:double
    
-}
-#dicepic {
-    height: 30vh;
-    text-align: center;
-}
-.center-result{
-    position: relative;
-    top: -11vh;
-    right: 0px;
-}
-#form {
-    height:60%;
-    background-color: lightgray;
-    padding: 3%;
-    
-}
-#diceselect {
-    height:30vh;
-    background-color: lightgray;
-    display: grid;
-    width:95vw;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:10px;
-    padding: 3%
-}
-.d-option {
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    color:rgb(78, 3, 175);
-}
-.on {
-    background-color: rgb(188, 185, 185) !important;
-}
-.actualpic {
-    height: 30vh;
-    width: 25vh;
-}
-header {
-    flex: 1 125px;
-    padding-top: 15px;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-width: 375px;
-}
-main {
-    flex: 1 calc(100vh - 110px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-#actualform {
-    background-color: rgb(142, 142, 142);
-    padding: 1ch;
-    border-radius: 10px;
-}
-
-button {
-    padding-top: 10px;
-    background-color: white !important;
-}
-button:hover {
-    background-color: rgb(188, 185, 185) !important;
-}
-.roll-button{
-    height: 6vh;
-    width: 100px;
-}
-h1 {
-    padding-bottom: 25px;
-}
-.dice-footer {
-    height: 30px;
-}
-a.text-reset {
-    float: right;
 }
