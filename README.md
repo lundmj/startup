@@ -19,3 +19,5 @@ It was way easier than I expected! I tried to basically go through each thing an
 NOTES FOR STARTUP
 HTML and CSS:
 Messing around with CSS helps you to learn a lot about how it goes together. I am by no means a pro at it yet, but I was able to figure out how to make my application work well, mostly within a mobile phone's dimensions. Currently it uses some crappy dice png files, but once I learn how to implement my dice rolling into the project, I will make these fit into the site better. They are currently more of a placeholder for that feature.
+JAVASCRIPT:
+Lots of stuff in JavaScript was new to me because it was hard to understand right away from class and homework. I tried to better understand things like eventListeners, etc. 
