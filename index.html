@@ -23,23 +23,24 @@
                 <a class="navbar-brand" href="#" id="center">DualDice</a>
             </div>
         </header>
-        <main class="bg-light text-dark text-center">
+        <main class="text-dark text-center">
             <div id="dicepic">
-                <img src="d20.png" alt="d20"/>
+                <img src="d20_final.png" alt="d20"/>
             </div>
             <div id="form">
                 <h1>Please login to continue:</h1>
-                <form method="get" action="rolld20.html" class="form" id="actualform">
-                    <input type="text" id="username" placeholder="Username..." />
-                    <input type="password" id="password" placeholder="Password..."/>
-                    <button type="submit" class="btn btn-outline-dark">Login</button>
-                    
-                </form>
+                <form id="actualform" action="rolld20.html">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <input type="submit" value="Login">
+                  </form>
             </div>
         </main>
         <footer class="bg-dark text-light dice-footer">
             <div class="container-fluid">
-                <span class="text-reset">Matthew Lund (with use of Bootstrap)</span>
+                <span class="text-reset">Matthew Lund</span>
                 <a
                   class="text-reset"
                   href="https://github.com/lundmj/startup.git"
@@ -49,5 +50,6 @@
                 >
               </div>
         </footer>
+        <script src="startup.js"></script>
     </body>
 </html>

@@ -16,6 +16,7 @@ header .navbar-brand {
     font-size: 40px;
     border: 2px solid white;
     padding: 5px 10px;
+    align-items: center;
 }
   
   /* Style the main content area */
@@ -97,4 +98,33 @@ footer a {
     font-family: 'Courier New', Courier, monospace;
     border-style:double
    
+}
+header .navbar-brand:hover {
+    text-decoration: underline;
+  }
+
+.d-option.on,
+.d-option:hover {
+    background-color: #555;
+    color: white;
+}
+
+#actualform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#actualform input[type="text"],
+#actualform input[type="password"] {
+    display: block;
+    margin: 5px auto;
+}
+  
+#actualform input[type="password"] {
+    margin-bottom: 0;
+}
+  
+#actualform input[type="submit"] {
+    margin-top: 10px;
 }

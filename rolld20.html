@@ -24,53 +24,42 @@
             </div>
         </header>
         <main class="text-dark text-center">
-            <div id="dicepic">
-                <img src="d20_final.png" alt="d20">
-                    <div class="center-result">20</div>
-                </img>
-                
+            
+            <div id="dicepart">
+                <img id="d20-image" src="d20_final.png" alt="d20"/>
+                <span id="d20-result">20</span>
+                <button onclick="rollDie(upperBound);" class="btn btn-outline-dark roll-button">ROLL</button>
             </div>
-            <div>
-                <button class="btn btn-outline-dark roll-button">
-                    ROLL
+           
+            <div id="diceselect" class="diceselect-container">
+                <button onclick="changeDie(20)" class="btn btn-outline-dark d-option on" >
+                    <div class="d-option">d20</div>
                 </button>
-            </div>
-            <div id="diceselect">
-                <form action="rolld20.html">
-                    <button class="btn btn-outline-dark d-option on" >
-                        <div class="d-option">d20</div>
-                    </button>
-                </form>
-                <form action="rolld12.html">
-                    <button class="btn btn-outline-dark d-option" >
-                        <div class="d-option">d12</div>
-                    </button>
-                </form>
-                <form action="rolld10.html">
-                    <button class="btn btn-outline-dark d-option" >
-                        <div class="d-option">d10</div>
-                    </button>
-                </form>
-                <form action="rolld8.html">
-                    <button class="btn btn-outline-dark d-option" >
-                        <div class="d-option">d8</div>
-                    </button>
-                </form>
-                <form action="rolld6.html">
-                    <button class="btn btn-outline-dark d-option" >
-                        <div class="d-option">d6</div>
-                    </button>
-                </form>
-                <form action="rolld4.html">
-                    <button class="btn btn-outline-dark d-option">
-                        <div class="d-option">d4</div>
-                    </button>
-                </form>
+            
+                <button onclick="changeDie(12)" class="btn btn-outline-dark d-option" >
+                    <div class="d-option">d12</div>
+                </button>
+            
+                <button onclick="changeDie(10)" class="btn btn-outline-dark d-option" >
+                    <div class="d-option">d10</div>
+                </button>
+            
+                <button onclick="changeDie(8)" class="btn btn-outline-dark d-option" >
+                    <div class="d-option">d8</div>
+                </button>
+            
+                <button onclick="changeDie(6)" class="btn btn-outline-dark d-option" >
+                    <div class="d-option">d6</div>
+                </button>
+            
+                <button onclick="changeDie(4)" class="btn btn-outline-dark d-option">
+                    <div class="d-option">d4</div>
+                </button>
             </div>
         </main>
         <footer class="bg-dark text-light dice-footer">
             <div class="container-fluid">
-                <span class="text-reset">Matthew Lund (with use of Bootstrap)</span>
+                <span class="text-reset">Matthew Lund</span>
                 <a
                   class="text-reset"
                   href="https://github.com/lundmj/startup.git"
@@ -80,5 +69,7 @@
                 >
               </div>
         </footer>
+
+        <script src="startup.js"></script>
     </body>
 </html>
