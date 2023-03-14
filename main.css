@@ -125,6 +125,6 @@ header .navbar-brand:hover {
     margin-bottom: 0;
 }
   
-#actualform input[type="submit"] {
+#actualform button {
     margin-top: 10px;
 }
