@@ -15,6 +15,8 @@ Key Features:
 NOTES FOR SIMON
 HTML:
 It was way easier than I expected! I tried to basically go through each thing and code it as it was written in the example thing. Some things I did a tiny bit different. For the actual buttons in play.html, I did copy what was there, but I looked through to try and understand what it was saying. But yeah I got some more experience putting together html, and got to see the process of turning my html from VSCode into an actual subdomain in my website!
+JAVASCRIPT AND SERVICE:
+I must have forgotten to commit the last notes. For Javascript, I was able to learn a lot about the methods for linking HTML with JS functionality. There is a lot of other stuff used, like promises and stuff, and that is all useful, but the ease with which HTML and JS link together with `<script>` as well as `onclick` is incredible. A lot smoother of a connection than I would have expected. Service functionality, it seems to me, is an upgrade upon localstorage as far as your ability to remember things between visits, and now between computers. I can see this being very useful for my startup application, where I need to be able to remember and communicate randomly generated numbers between devices. This is probably going to be better once we get to websockets and stuff, but for now this works great.
 
 NOTES FOR STARTUP
 HTML and CSS:
