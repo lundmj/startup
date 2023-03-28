@@ -12,14 +12,19 @@ Key Features:
 - Instantly displays the roll for the roller and the one who they connect with, which is probably the person administering the game
 - Rolls up to 8 dice at once, both displaying their values and providing a sum at the bottom
 
-NOTES FOR SIMON
+-=NOTES FOR SIMON=-
+
 HTML:
 It was way easier than I expected! I tried to basically go through each thing and code it as it was written in the example thing. Some things I did a tiny bit different. For the actual buttons in play.html, I did copy what was there, but I looked through to try and understand what it was saying. But yeah I got some more experience putting together html, and got to see the process of turning my html from VSCode into an actual subdomain in my website!
+
 JAVASCRIPT AND SERVICE:
 I must have forgotten to commit the last notes. For Javascript, I was able to learn a lot about the methods for linking HTML with JS functionality. There is a lot of other stuff used, like promises and stuff, and that is all useful, but the ease with which HTML and JS link together with `<script>` as well as `onclick` is incredible. A lot smoother of a connection than I would have expected. Service functionality, it seems to me, is an upgrade upon localstorage as far as your ability to remember things between visits, and now between computers. I can see this being very useful for my startup application, where I need to be able to remember and communicate randomly generated numbers between devices. This is probably going to be better once we get to websockets and stuff, but for now this works great.
 
-NOTES FOR STARTUP
+
+-=NOTES FOR STARTUP=-
+
 HTML and CSS:
 Messing around with CSS helps you to learn a lot about how it goes together. I am by no means a pro at it yet, but I was able to figure out how to make my application work well, mostly within a mobile phone's dimensions. Currently it uses some crappy dice png files, but once I learn how to implement my dice rolling into the project, I will make these fit into the site better. They are currently more of a placeholder for that feature.
+
 JAVASCRIPT:
 Lots of stuff in JavaScript was new to me because it was hard to understand right away from class and homework. I tried to better understand things like eventListeners, etc. 
