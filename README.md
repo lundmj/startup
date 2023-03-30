@@ -26,6 +26,9 @@ I love the idea and functionality of using databases, but I really want to sit a
 LOGIN:
 This is going to be the most useful piece yet for my startup. Being able to uniquely identify the users is more than just a security thing (my startup doesn't care about security much anyway), but is actually part of the base functionality of why the app exists in the first place. I want to look more into how to interact with others who are logged in and treat different logged in individuals differently.
 
+WEBSOCKET:
+I spent some time looking at all of the different functions within the PeerProxy class, and it seems like most of the code is pretty necessary for all extended communications between peers. I'll be needing this in order for my app to work. Will I mostly be copying the code I see here or will mine look unique depending on the needs of my startup?
+
 -=NOTES FOR STARTUP=-
 
 HTML and CSS:
