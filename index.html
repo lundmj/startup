@@ -27,14 +27,14 @@
             </div>
             <div id="form">
                 <h1>Please login to continue:</h1>
-                <form id="actualform" action="rolld20.html">
+                <div id="actualform">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password">
-                    <input type="submit" value="Login" class="btn btn-outline-dark">
-
-                  </form>
+                    <button class="btn btn-outline-dark" onclick="login()">Login</button>
+                </div>
+                
             </div>
         </main>
         <footer class="bg-dark text-light dice-footer">
@@ -49,6 +49,8 @@
                 >
               </div>
         </footer>
-        <script src="startup.js"></script>
+        <script src="startup.js">
+            
+        </script>
     </body>
 </html>

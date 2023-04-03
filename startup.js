@@ -28,10 +28,9 @@ buttons.forEach(button => {
     });
 });
 
-const loginBtn = document.getElementById("login-btn");
-
-loginBtn.addEventListener("click", function() {
-    const username = document.getElementById("username").value;
-    localStorage.setItem("username", username);
+function login() {
+    const nameEl = document.querySelector("#username");
+    localStorage.setItem("userName", nameEl.value);
     window.location.href = "rolld20.html";
-});
+  }
+  

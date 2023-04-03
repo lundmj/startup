@@ -4,7 +4,6 @@ body {
     color: #333;
 }
   
-  /* Style the header */
 header {
     height: 125px;
     background-color: #333;
@@ -128,3 +127,4 @@ header .navbar-brand:hover {
 #actualform input[type="submit"] {
     margin-top: 10px;
 }
+
