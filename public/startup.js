@@ -28,12 +28,6 @@ buttons.forEach(button => {
     });
 });
 
-function login() {
-    const nameEl = document.querySelector("#username");
-    localStorage.setItem("userName", nameEl.value);
-    window.location.href = "rolld20.html";
-}
-
 function sendRoll(recipient, value){
     //WebSocket communication here
 }
