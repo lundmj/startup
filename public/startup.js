@@ -37,3 +37,4 @@ function login() {
 function sendRoll(recipient, value){
     //WebSocket communication here
 }
+
