@@ -29,6 +29,9 @@ This is going to be the most useful piece yet for my startup. Being able to uniq
 WEBSOCKET:
 I spent some time looking at all of the different functions within the PeerProxy class, and it seems like most of the code is pretty necessary for all extended communications between peers. I'll be needing this in order for my app to work. Will I mostly be copying the code I see here or will mine look unique depending on the needs of my startup?
 
+REACT:
+I looked into how it seems like there are lots and lots of jsx files, whereas there were fewer js and html files before. It's good to segment your code like that and I'll probably reference the simon for how to do this in my startup.
+
 -=NOTES FOR STARTUP=-
 
 HTML and CSS:
