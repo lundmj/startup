@@ -25,6 +25,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white !important;
 }
   
   /* Style the dicepart div */
