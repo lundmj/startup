@@ -7,5 +7,10 @@ const hostname = process.env.MONGOHOSTNAME;
 const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
 const client = new MongoClient(url);
+const pastPlayers = client.db('DD').collection('pastPlayers');
 
-module.exports = {};
+function addPlayer(player){
+    pastPlayers.insertOne(player);
+}
+
+module.exports = {addPlayer};
