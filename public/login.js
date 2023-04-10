@@ -31,7 +31,7 @@ async function loginOrCreate(endpoint) {
   const password = document.querySelector('#userPassword')?.value;
   const response = await fetch(endpoint, {
     method: 'post',
-    body: JSON.stringify({ email: userName, password: password }),
+    body: JSON.stringify({ userName: userName, password: password }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
@@ -40,7 +40,7 @@ async function loginOrCreate(endpoint) {
 
   if (response?.status === 200) {
     localStorage.setItem('userName', userName);
-    window.location.href = 'play.html';
+    window.location.href = 'rolld20.html';
   } else {
     const modalEl = document.querySelector('#msgModal');
     modalEl.querySelector('.modal-body').textContent = `⚠ Error: ${body.msg}`;
@@ -50,7 +50,7 @@ async function loginOrCreate(endpoint) {
 }
 
 function play() {
-  window.location.href = 'play.html';
+  window.location.href = 'rolld20.html';
 }
 
 function logout() {
@@ -59,10 +59,10 @@ function logout() {
   }).then(() => (window.location.href = '/'));
 }
 
-async function getUser(email) {
+async function getUser(userName) {
   let scores = [];
-  // See if we have a user with the given email.
-  const response = await fetch(`/api/user/${email}`);
+  // See if we have a user with the given userName.
+  const response = await fetch(`/api/user/${userName}`);
   if (response.status === 200) {
     return response.json();
   }
