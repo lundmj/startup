@@ -33,6 +33,15 @@ apiRouter.post('/auth/create', async (req, res) => {
       });
     }
 });
+
+app.post("/roll", function(req, res) {
+  /////////////////////
+});
+
+app.get("/rolls/:user", (req, res) => {
+  /////////////////////
+});
+
   
   // GetAuth token for the provided credentials
 apiRouter.post('/auth/login', async (req, res) => {

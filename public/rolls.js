@@ -1,19 +1,16 @@
 function displayRolls(rolls) {
-    const table = document.getElementById("rollsTable");
-    for (let i = 0; i < rolls.length; i++) {
-      const row = table.insertRow(-1);
-      const userCell = row.insertCell(0);
-      const valueCell = row.insertCell(1);
-      userCell.innerHTML = rolls[i].userName;
-      valueCell.innerHTML = rolls[i].value;
+    let item = 1;
+    while (item <= 10){
+        document.getElementById("${item}").innerHTML = rolls[item-1];
     }
 }
 
-  async function getRolls() {
-    const response = await fetch("/rolls");
+async function getRolls() {
+    const user = localStorage.getItem('username');
+    const response = await fetch(`/rolls/${user}`);
     const rolls = await response.json();
     return rolls;
-}
+  }
 // Get reference to the table element in HTML
 const table = document.getElementById("roll-table");
 
