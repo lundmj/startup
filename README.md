@@ -39,3 +39,6 @@ Messing around with CSS helps you to learn a lot about how it goes together. I a
 
 JAVASCRIPT:
 Lots of stuff in JavaScript was new to me because it was hard to understand right away from class and homework. I tried to better understand things like eventListeners, etc. 
+
+SERVICE:
+This part taught me a lot about exactly how javascript interacts with "other" (I want to call them third-party but idk if that's right) services like a mongo database and the actual AWS hosting platform itself. There were a lot of errors I ran into which pertained to the package.json file which taught me about package dependencies and how they jive with the deployment script, etc. 

@@ -34,12 +34,13 @@ apiRouter.post('/auth/create', async (req, res) => {
     }
 });
 
-apiRouter.post("/roll", function(req, res) {
-  const roll = await DB.saveRoll(req.params.roll)
+apiRouter.post("/roll", async (req, res) => {
+  console.log(req.body);
+  DB.saveRoll(req.body);
 });
 
 apiRouter.get("/rolls/:user", async (req, res) => {
-  const rolls = await DB.getRolls(req.params.userName);
+  const rolls = await DB.getRolls(req.params.user);
   res.send(rolls);
 });
 

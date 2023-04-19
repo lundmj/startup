@@ -10,6 +10,7 @@ const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
 const client = new MongoClient(url);
 const userCollection = client.db('DD').collection('users');
+const rollsCollection = client.db('DD').collection('rolls');
 
 /*USER FUNCTIONALITY*/
 function getUser(userName) {
@@ -18,6 +19,17 @@ function getUser(userName) {
   
 function getUserByToken(token) {
     return userCollection.findOne({ token: token });
+}
+
+async function getRolls(userName){
+    const query = {userName: {$eq: userName}};
+    const options = {limit: 10, sort: {$natural: -1}};
+    const cursor = rollsCollection.find(query, options);
+    return cursor.toArray();
+}
+
+async function saveRoll(roll){
+    await rollsCollection.insertOne(roll);
 }
   
 async function createUser(userName, password) {
@@ -38,4 +50,6 @@ module.exports = {
     getUser,
     getUserByToken,
     createUser,
-  };
+    getRolls,
+    saveRoll,
+};
