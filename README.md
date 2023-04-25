@@ -43,3 +43,270 @@ Lots of stuff in JavaScript was new to me because it was hard to understand righ
 SERVICE:
 This part taught me a lot about exactly how javascript interacts with "other" (I want to call them third-party but idk if that's right) services like a mongo database and the actual AWS hosting platform itself. There were a lot of errors I ran into which pertained to the package.json file which taught me about package dependencies and how they jive with the deployment script, etc. ADDITION: Publishing to the database was incredibly hard! But we got it to work out, and now I know a whole lot more about endpoints, etc!
 
+
+
+
+
+NOTES FOR FINAL:
+
+HTTP (Hypertext Transfer Protocol):
+HTTP is the protocol used for communication between web servers and web clients (browsers).
+It is a request-response protocol, meaning that the client sends a request to the server, and the server responds with a message.
+The most common HTTP request methods are GET, POST, PUT, DELETE, and PATCH.
+HTTP uses a URL (Uniform Resource Locator) to identify resources on the web.
+
+HTTP requests:
+An HTTP request is a message sent from a client (browser) to a server, requesting a specific resource.
+The request includes the request method (GET, POST, etc.), the URL of the resource, and any additional headers or parameters.
+The server responds with an HTTP response message, which includes a status code indicating the success or failure of the request.
+
+Web services:
+A web service is a way for software applications to communicate over the internet, using HTTP or other protocols.
+Web services can be used to share data and functionality between different systems, even if they are built on different platforms or programming languages.
+Common web service technologies include SOAP (Simple Object Access Protocol) and REST (Representational State Transfer).
+
+Database services:
+A database service is a service that provides access to a database over the internet.
+Cloud-based database services, such as Amazon RDS or Google Cloud SQL, allow developers to easily set up and manage databases without having to manage hardware or software.
+
+Authorization services:
+Authorization services are used to manage access to resources based on user permissions.
+OAuth (Open Authorization) is a commonly used authorization protocol that allows users to grant access to their resources (such as social media accounts) to third-party applications.
+
+WebSocket:
+WebSocket is a protocol that allows for real-time, two-way communication between a web server and a client (browser).
+WebSocket is used for applications that require a constant connection, such as chat applications or online games.
+
+Web application frameworks:
+Web application frameworks are libraries or toolkits that help developers build web applications more easily and efficiently.
+Popular web application frameworks include Django (Python), Ruby on Rails (Ruby), and Laravel (PHP).
+
+Web security:
+Web security involves protecting web applications and users from threats such as hacking, malware, and data breaches.
+Common security measures include using SSL/TLS encryption, implementing secure authentication and authorization, and regularly updating software and systems to address vulnerabilities.
+
+
+Here are the most common HTTP request methods with definitions and examples:
+
+GET: The GET method is used to request a resource from the server. This could be a webpage, an image, a video, or any other file that can be accessed via a URL. When you type a website URL into your browser, a GET request is sent to the server to fetch the web page. For example:
+************
+GET /index.html HTTP/1.1
+Host: www.example.com
+************
+***
+
+
+POST: The POST method is used to send data to the server to create or update a resource. This is often used when submitting a form on a website or when uploading a file. For example:
+************
+POST /submit-form HTTP/1.1
+Host: www.example.com
+Content-Type: application/x-www-form-urlencoded
+
+name=John&email=john@example.com&message=Hello+World
+************
+***
+
+
+PUT: The PUT method is used to update an existing resource on the server. This could be a file, a database record, or any other resource that can be updated. For example:
+************
+PUT /update-profile HTTP/1.1
+Host: www.example.com
+Content-Type: application/json
+
+{
+  "name": "John",
+  "email": "john@example.com",
+  "age": 30
+}
+*************
+***
+
+
+DELETE: The DELETE method is used to delete a resource on the server. This could be a file, a database record, or any other resource that can be deleted. For example:
+*************
+DELETE /delete-record HTTP/1.1
+Host: www.example.com
+*************
+***
+
+
+PATCH: The PATCH method is used to update a part of an existing resource on the server. This is useful when you don't want to update the entire resource but only a part of it. For example:
+*************
+PATCH /update-profile HTTP/1.1
+Host: www.example.com
+Content-Type: application/json
+
+{
+  "age": 31
+}
+*************
+***
+
+
+REACT
+
+
+Defining a Component:
+
+import React from 'react';
+
+class MyComponent extends React.Component {
+render() {
+return <h1>Hello, world!</h1>;
+}
+}
+This example demonstrates how to define a component using the class syntax. The render() method is required and returns the JSX that defines the component's UI.
+***
+
+
+Functional Components:
+
+import React from 'react';
+
+function MyComponent() {
+return <h1>Hello, world!</h1>;
+}
+This example demonstrates how to define a functional component using the function syntax. Functional components are simpler and more lightweight than class components and can be used for simple UI components.
+***
+
+
+Props:
+
+import React from 'react';
+
+function Greeting(props) {
+return <h1>Hello, {props.name}!</h1>;
+}
+
+function App() {
+return <Greeting name="Alice" />;
+}
+
+State:
+
+import React from 'react';
+
+class Counter extends React.Component {
+constructor(props) {
+super(props);
+this.state = { count: 0 };
+}
+
+render() {
+return (
+<div>
+<p>Count: {this.state.count}</p>
+<button onClick={() => this.setState({ count: this.state.count + 1 })}>
+Increment
+</button>
+</div>
+);
+}
+}
+
+Conditional Rendering:
+
+import React from 'react';
+
+function Greeting(props) {
+if (props.isLoggedIn) {
+return <h1>Welcome back!</h1>;
+} else {
+return <h1>Please log in.</h1>;
+}
+}
+
+Handling Events:
+
+import React from 'react';
+
+function Button(props) {
+function handleClick() {
+alert('Button clicked!');
+}
+
+return <button onClick={handleClick}>{props.label}</button>;
+}
+
+
+-EXAMPLES OF JSX -> JS
+Example 1:
+
+JSX Code:
+
+const element = <h1>Hello, world!</h1>;
+
+JavaScript Code:
+
+const element = React.createElement("h1", null, "Hello, world!");
+
+
+Example 2:
+
+JSX Code:
+
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+JavaScript Code:
+
+function Greeting(props) {
+  return React.createElement("h1", null, "Hello, ", props.name, "!");
+}
+
+In both examples, the JSX code is transformed into calls to React.createElement, which creates a new virtual DOM element with the specified tag name, properties, and children. The resulting JavaScript code can then be executed in the browser or sent to the client as plain JavaScript code.
+
+
+-REACT ROUTER
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+function Home() {
+  return <h1>Welcome to the home page!</h1>;
+}
+
+function About() {
+  return <h1>About Us</h1>;
+}
+
+function Contact() {
+  return <h1>Contact Us</h1>;
+}
+
+function Products() {
+  return <h1>Our Products</h1>;
+}
+
+function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/products" component={Products} />
+          <Route path='*' element={<Navigate to='/' replace />} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
